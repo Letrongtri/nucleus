@@ -1,5 +1,5 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
@@ -62,18 +62,26 @@ const config: Config = {
         src: 'img/logo.svg',
       },
       items: [
-        // {
-        //   type: 'docSidebar',
-        //   sidebarId: 'tutorialSidebar',
-        //   position: 'left',
-        //   label: 'Tutorial',
-        // },
-        // {to: '/blog', label: 'Blog', position: 'left'},
-        // {
-        //   href: 'https://github.com/facebook/docusaurus',
-        //   label: 'GitHub',
-        //   position: 'right',
-        // },
+
+        {
+          type: 'doc',
+          docId: 'intro',
+          position: 'left',
+          label: 'Introduction',
+        },
+        {
+          type: 'doc',
+          docId: 'Hooks/index',
+          position: 'left',
+          label: 'Hooks',
+        },
+        {
+          type: 'doc',
+          docId: 'Atoms/index',
+          position: 'left',
+          label: 'Atoms',
+        }
+
       ],
     },
     // footer: {
