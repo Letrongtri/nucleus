@@ -6,7 +6,7 @@ const Button: React.FC<ButtonPropsTypes> = ({
   onClick,
   className = '',
   disabled = false,
-  variant = 'primary',
+  variant = 'primary'
 }) => {
   return (
     <button
