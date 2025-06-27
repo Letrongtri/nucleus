@@ -47,6 +47,8 @@ jobs:
           else
             echo "Version has been incremented."
           fi
+      - name: Install Dependencies
+        run: npm install
 
       - name: Check formatting
         run: |
