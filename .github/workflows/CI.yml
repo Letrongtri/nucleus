@@ -59,4 +59,7 @@ jobs:
       - name: Validate Typescript
         run: |
           npm run typescheck
+      - name: Unit Tests
+        run: |
+          npm run test -- --coverage
 
