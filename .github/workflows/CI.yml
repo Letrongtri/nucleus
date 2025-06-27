@@ -1,0 +1,52 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  check-version-and-format:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          pip install packaging black
+
+      - name: Get base branch version
+        id: base_version
+        run: |
+          git fetch origin ${{ github.base_ref }}
+          git checkout origin/${{ github.base_ref }}
+          BASE_VERSION=$(python -c "import toml; print(toml.load('pyproject.toml')['tool']['poetry']['version'])" 2>/dev/null || grep -m1 version pyproject.toml | grep -oE '[0-9]+\.[0-9]+\.[0-9]+')
+          echo "base_version=$BASE_VERSION" >> $GITHUB_OUTPUT
+
+      - name: Get PR branch version
+        id: pr_version
+        run: |
+          git checkout ${{ github.head_ref }}
+          PR_VERSION=$(python -c "import toml; print(toml.load('pyproject.toml')['tool']['poetry']['version'])" 2>/dev/null || grep -m1 version pyproject.toml | grep -oE '[0-9]+\.[0-9]+\.[0-9]+')
+          echo "pr_version=$PR_VERSION" >> $GITHUB_OUTPUT
+
+      - name: Check version increment
+        run: |
+          python -c "
+import sys
+from packaging.version import Version
+base = Version('${{ steps.base_version.outputs.base_version }}')
+pr = Version('${{ steps.pr_version.outputs.pr_version }}')
+if pr <= base:
+    print(f'Version not incremented: base={base}, pr={pr}')
+    sys.exit(1)
+"
+
+      - name: Check formatting
+        run: |
+          npm run format:verify
