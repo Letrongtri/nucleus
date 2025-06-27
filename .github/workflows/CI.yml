@@ -53,3 +53,9 @@ jobs:
       - name: Check formatting
         run: |
           npm run format:verify
+      - name: Linting
+        run: |
+          npm run lint
+      - name: Validate Typescript
+        run: |
+          npm run typescheck
