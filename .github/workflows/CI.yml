@@ -1,0 +1,62 @@
+name: CI
+
+on:
+  pull_request:
+    branches:
+      - main  # Trigger on PRs into the main branch
+  
+permissions:
+  pull-requests: write
+  contents: read
+  
+jobs:
+  CI:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20' # or any version your project uses
+
+      - name: Fetch main branch
+        run: git fetch origin main
+
+      - name: Get current package version from main branch
+        run: |
+          git show origin/main:package.json > main_package.json
+          jq -r '.version' main_package.json > main_version.txt
+
+      - name: Get package version from PR branch
+        run: |
+          jq -r '.version' package.json > pr_version.txt
+
+      - name: Compare versions
+        id: version_check
+        run: |
+          MAIN_VERSION=$(cat main_version.txt)
+          PR_VERSION=$(cat pr_version.txt)
+          echo "Main branch version: $MAIN_VERSION"
+          echo "PR branch version: $PR_VERSION"
+          if [ "$MAIN_VERSION" = "$PR_VERSION" ]; then
+            echo "Version has not been incremented!"
+            exit 1
+          else
+            echo "Version has been incremented."
+          fi
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Check formatting
+        run: |
+          npm run format:verify
+      - name: Linting
+        run: |
+          npm run lint
+      - name: Validate Typescript
+        run: |
+          npm run typescheck
+

@@ -1,6 +1,6 @@
 {
   "name": "nucleus",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Nucleus — A core library of reusable React components and custom hooks that form the foundation of your projects. Lightweight, modular, and developer-friendly, Nucleus helps you build clean, scalable React apps faster by providing essential building blocks out of the box.",
   "main": "src",
   "scripts": {
@@ -8,7 +8,12 @@
     "copy-css": "cpx \"src/**/*.module.css\" dist",
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "format": "prettier --single-quote --trailing-comma=none --write 'src/**/*.{ts,tsx,js,jsx,json,css}'",
+    "format:verify": "prettier --single-quote --trailing-comma=none 'src/**/*.{ts,tsx,js,jsx,json,css}'",
+    "build-storybook": "storybook build",
+    "lint": "eslint 'src/**/*.{ts,tsx,js,jsx}'",
+    "lint:fix": "eslint 'src/**/*.{ts,tsx,js,jsx}' --fix",
+    "typescheck": "tsc --noEmit"
   },
   "repository": {
     "type": "git",
@@ -27,9 +32,15 @@
     "@storybook/react-webpack5": "^9.0.13",
     "@types/node": "^24.0.4",
     "@types/react": "^19.1.8",
-    "cpx": "^1.5.0",
+    "cpx": "^1.2.1",
+    "eslint": "^8",
+    "eslint-plugin-storybook": "^0.12.0",
+    "prettier": "^3.6.2",
     "react": "^19.1.0",
     "storybook": "^9.0.13",
     "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "typescript-eslint": "^8.35.0"
   }
 }
