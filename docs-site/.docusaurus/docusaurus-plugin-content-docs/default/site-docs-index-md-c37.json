@@ -1,0 +1,23 @@
+{
+  "id": "index",
+  "title": "Components",
+  "description": "We use atomic design",
+  "source": "@site/docs/index.md",
+  "sourceDirName": ".",
+  "slug": "/",
+  "permalink": "/nucleus/docs/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "defaultSidebar",
+  "previous": {
+    "title": "useLocalStorage",
+    "permalink": "/nucleus/docs/Hooks/useLocalStorage"
+  },
+  "next": {
+    "title": "Welcome to Nucleus",
+    "permalink": "/nucleus/docs/intro"
+  }
+}

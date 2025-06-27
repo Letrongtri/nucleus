@@ -1,0 +1,23 @@
+{
+  "id": "Components/Atoms/Button",
+  "title": "Button",
+  "description": "",
+  "source": "@site/docs/Components/Atoms/Button.md",
+  "sourceDirName": "Components/Atoms",
+  "slug": "/Components/Atoms/Button",
+  "permalink": "/nucleus/docs/Components/Atoms/Button",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "defaultSidebar",
+  "previous": {
+    "title": "Atoms",
+    "permalink": "/nucleus/docs/Components/Atoms/"
+  },
+  "next": {
+    "title": "Molecules",
+    "permalink": "/nucleus/docs/Components/Molecules/"
+  }
+}

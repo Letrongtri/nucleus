@@ -1,0 +1,23 @@
+{
+  "id": "Atoms/Button",
+  "title": "Button",
+  "description": "",
+  "source": "@site/docs/Atoms/Button.md",
+  "sourceDirName": "Atoms",
+  "slug": "/Atoms/Button",
+  "permalink": "/nucleus/docs/Atoms/Button",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "defaultSidebar",
+  "previous": {
+    "title": "Atoms",
+    "permalink": "/nucleus/docs/Atoms/"
+  },
+  "next": {
+    "title": "Atoms",
+    "permalink": "/nucleus/docs/Components/Atoms/"
+  }
+}

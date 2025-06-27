@@ -1,0 +1,23 @@
+{
+  "id": "Molecules copy/index",
+  "title": "Molecules",
+  "description": "Coming Soon!",
+  "source": "@site/docs/Molecules copy/index.md",
+  "sourceDirName": "Molecules copy",
+  "slug": "/Molecules copy/",
+  "permalink": "/nucleus/docs/Molecules copy/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "defaultSidebar",
+  "previous": {
+    "title": "Molecules",
+    "permalink": "/nucleus/docs/Molecules/"
+  },
+  "next": {
+    "title": "Welcome to Nucleus",
+    "permalink": "/nucleus/docs/intro"
+  }
+}

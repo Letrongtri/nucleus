@@ -1,0 +1,19 @@
+{
+  "id": "Components/index",
+  "title": "Components",
+  "description": "We use atomic design",
+  "source": "@site/docs/Components/index.md",
+  "sourceDirName": "Components",
+  "slug": "/Components/",
+  "permalink": "/nucleus/docs/Components/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "defaultSidebar",
+  "next": {
+    "title": "Atoms",
+    "permalink": "/nucleus/docs/Components/Atoms/"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/nucleus/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/nucleus/docs",
+          "mainDocId": "Components/index",
+          "docs": [
+            {
+              "id": "Components/Atoms/Button",
+              "path": "/nucleus/docs/Components/Atoms/Button",
+              "sidebar": "defaultSidebar"
+            },
+            {
+              "id": "Components/Atoms/index",
+              "path": "/nucleus/docs/Components/Atoms/",
+              "sidebar": "defaultSidebar"
+            },
+            {
+              "id": "Components/index",
+              "path": "/nucleus/docs/Components/",
+              "sidebar": "defaultSidebar"
+            },
+            {
+              "id": "Components/Molecules/index",
+              "path": "/nucleus/docs/Components/Molecules/",
+              "sidebar": "defaultSidebar"
+            },
+            {
+              "id": "Components/Organisms/index",
+              "path": "/nucleus/docs/Components/Organisms/",
+              "sidebar": "defaultSidebar"
+            },
+            {
+              "id": "Hooks/index",
+              "path": "/nucleus/docs/Hooks/",
+              "sidebar": "defaultSidebar"
+            },
+            {
+              "id": "Hooks/useLocalStorage",
+              "path": "/nucleus/docs/Hooks/useLocalStorage",
+              "sidebar": "defaultSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/nucleus/docs/intro",
+              "sidebar": "defaultSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "defaultSidebar": {
+              "link": {
+                "path": "/nucleus/docs/Components/",
+                "label": "Components"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}
