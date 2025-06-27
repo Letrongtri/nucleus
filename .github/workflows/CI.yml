@@ -20,7 +20,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16' # or any version your project uses
+          node-version: '20' # or any version your project uses
 
       - name: Fetch main branch
         run: git fetch origin main
@@ -59,3 +59,4 @@ jobs:
       - name: Validate Typescript
         run: |
           npm run typescheck
+
