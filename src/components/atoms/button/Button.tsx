@@ -1,21 +1,15 @@
 import styles from './Button.module.css';
 
-
-const Button = ({
-  children,
+import { type ButtonPropsTypes } from './Button.types';
+const Button: React.FC<ButtonPropsTypes> = ({  children,
   onClick,
   className = '',
   disabled = false,
-}: {
-  children: React.ReactNode;
-  onClick?: () => void;
-  className?: string;
-  disabled?: boolean;
 }) => {     
     return (
         <button
         onClick={onClick}
-        className={`${styles.defaultButtonStyles} ${className}`}
+        className={`${styles.defaultButtonStyles} ${disabled ? styles.isDisabled : ""} ${className}`}
         disabled={disabled}
         >
         {children}
