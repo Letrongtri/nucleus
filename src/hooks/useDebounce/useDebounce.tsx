@@ -11,23 +11,23 @@ import { default as useTimeout } from '../useTimeout/useTimeout';
  */
 
 interface UseDebounceOptions {
-    callback: () => void;
-    delay: number;
-    dependencies: React.DependencyList;
+  callback: () => void;
+  delay: number;
+  dependencies: React.DependencyList;
 }
 
 interface UseTimeoutReturn {
-    reset: () => void;
-    clear: () => void;
+  reset: () => void;
+  clear: () => void;
 }
 
 const useDebounce = (
-    callback: UseDebounceOptions['callback'],
-    delay: UseDebounceOptions['delay'],
-    dependencies: UseDebounceOptions['dependencies']
+  callback: UseDebounceOptions['callback'],
+  delay: UseDebounceOptions['delay'],
+  dependencies: UseDebounceOptions['dependencies']
 ): void => {
-    const { reset, clear }: UseTimeoutReturn = useTimeout(callback, delay);
-    useEffect(reset, [...dependencies, reset]);
-    useEffect(clear, []);
+  const { reset, clear }: UseTimeoutReturn = useTimeout(callback, delay);
+  useEffect(reset, [...dependencies, reset]);
+  useEffect(clear, []);
 };
 export default useDebounce;

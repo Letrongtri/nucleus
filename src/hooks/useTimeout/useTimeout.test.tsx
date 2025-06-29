@@ -1,19 +1,18 @@
 /**
  * @jest-environment jsdom
  */
-import React from 'react';
-import { renderHook, fireEvent, act } from '@testing-library/react';
+import { renderHook, act } from '@testing-library/react';
 import { default as useTimeout } from './useTimeout';
 
 describe('useTimeout', () => {
   it('should call the callback after the specified delay', () => {
-    let delay = 1000;
+    const delay = 1000;
     let callbackCalled = false;
     const callback = () => {
       callbackCalled = true;
     };
 
-    const { result } = renderHook(() => useTimeout(callback, delay));
+    renderHook(() => useTimeout(callback, delay));
     expect(callbackCalled).toBe(false);
 
     setTimeout(() => {
@@ -22,7 +21,7 @@ describe('useTimeout', () => {
   });
 
   it('should be able to reset the timeout', () => {
-    let delay = 1000;
+    const delay = 1000;
     let callbackCalled = false;
     const callback = () => {
       callbackCalled = true;
@@ -41,7 +40,7 @@ describe('useTimeout', () => {
   });
 
   it('should be able to clear the timeout', () => {
-    let delay = 1000;
+    const delay = 1000;
     let callbackCalled = false;
     const callback = () => {
       callbackCalled = true;
@@ -56,7 +55,7 @@ describe('useTimeout', () => {
     }, delay + 100);
   });
   it('should be able to clear the timeout with 0 delay', () => {
-    let delay = 0;
+    const delay = 0;
     let callbackCalled = false;
     const callback = () => {
       callbackCalled = true;
@@ -66,9 +65,10 @@ describe('useTimeout', () => {
     act(() => {
       result.current.clear();
     });
+    expect(callbackCalled).toBe(false);
   });
   it('should be able to clear the timeout with negative delay', () => {
-    let delay = -1000;
+    const delay = -1000;
     let callbackCalled = false;
     const callback = () => {
       callbackCalled = true;
@@ -78,16 +78,17 @@ describe('useTimeout', () => {
     act(() => {
       result.current.clear();
     });
+    expect(callbackCalled).toBe(false);
   });
 
   it('should be optimized for performance', () => {
-    let delay = 1000;
+    const delay = 1000;
     let callbackCalled = false;
     const callback = () => {
       callbackCalled = true;
     };
 
-    const { result } = renderHook(() => useTimeout(callback, delay));
+    renderHook(() => useTimeout(callback, delay));
     const startTime = performance.now();
 
     setTimeout(() => {

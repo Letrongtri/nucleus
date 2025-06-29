@@ -15,7 +15,9 @@ type Callback = () => void;
 
 const useTimeout = (callback: Callback, delay: number): UseTimeoutReturn => {
   const callbackRef = useRef<Callback>(callback);
-  const timeoutRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
+  const timeoutRef = useRef<ReturnType<typeof setTimeout> | undefined>(
+    undefined
+  );
 
   useEffect(() => {
     callbackRef.current = callback;
@@ -25,9 +27,10 @@ const useTimeout = (callback: Callback, delay: number): UseTimeoutReturn => {
     timeoutRef.current = setTimeout(() => callbackRef.current(), delay);
   }, [delay]);
 
-  const clear = useCallback(() => {
-    timeoutRef.current && clearTimeout(timeoutRef.current);
-  }, []);
+  const clear = useCallback(
+    () => timeoutRef.current && clearTimeout(timeoutRef.current),
+    []
+  );
 
   useEffect(() => {
     set();
