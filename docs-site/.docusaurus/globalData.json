@@ -8,7 +8,7 @@
           "label": "Next",
           "isLast": true,
           "path": "/nucleus/docs",
-          "mainDocId": "Components/index",
+          "mainDocId": "Components/Atoms/index",
           "docs": [
             {
               "id": "Components/Atoms/Button",
@@ -21,18 +21,8 @@
               "sidebar": "defaultSidebar"
             },
             {
-              "id": "Components/index",
-              "path": "/nucleus/docs/Components/",
-              "sidebar": "defaultSidebar"
-            },
-            {
-              "id": "Components/Molecules/index",
-              "path": "/nucleus/docs/Components/Molecules/",
-              "sidebar": "defaultSidebar"
-            },
-            {
-              "id": "Components/Organisms/index",
-              "path": "/nucleus/docs/Components/Organisms/",
+              "id": "Components/Atoms/Textfield",
+              "path": "/nucleus/docs/Components/Atoms/Textfield",
               "sidebar": "defaultSidebar"
             },
             {
@@ -55,8 +45,8 @@
           "sidebars": {
             "defaultSidebar": {
               "link": {
-                "path": "/nucleus/docs/Components/",
-                "label": "Components"
+                "path": "/nucleus/docs/Components/Atoms/",
+                "label": "Atoms"
               }
             }
           }

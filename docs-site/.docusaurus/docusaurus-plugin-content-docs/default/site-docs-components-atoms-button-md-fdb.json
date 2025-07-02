@@ -1,7 +1,7 @@
 {
   "id": "Components/Atoms/Button",
   "title": "Button",
-  "description": "",
+  "description": "* Represents a clickable button component that can trigger an action or event when pressed by the user.",
   "source": "@site/docs/Components/Atoms/Button.md",
   "sourceDirName": "Components/Atoms",
   "slug": "/Components/Atoms/Button",
@@ -17,7 +17,7 @@
     "permalink": "/nucleus/docs/Components/Atoms/"
   },
   "next": {
-    "title": "Molecules",
-    "permalink": "/nucleus/docs/Components/Molecules/"
+    "title": "Textfield",
+    "permalink": "/nucleus/docs/Components/Atoms/Textfield"
   }
 }

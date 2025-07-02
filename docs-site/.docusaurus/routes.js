@@ -39,22 +39,16 @@ export default [
   },
   {
     path: '/nucleus/docs',
-    component: ComponentCreator('/nucleus/docs', '168'),
+    component: ComponentCreator('/nucleus/docs', 'e8c'),
     routes: [
       {
         path: '/nucleus/docs',
-        component: ComponentCreator('/nucleus/docs', '6e6'),
+        component: ComponentCreator('/nucleus/docs', 'dfa'),
         routes: [
           {
             path: '/nucleus/docs',
-            component: ComponentCreator('/nucleus/docs', '1df'),
+            component: ComponentCreator('/nucleus/docs', '3b8'),
             routes: [
-              {
-                path: '/nucleus/docs/Components/',
-                component: ComponentCreator('/nucleus/docs/Components/', '350'),
-                exact: true,
-                sidebar: "defaultSidebar"
-              },
               {
                 path: '/nucleus/docs/Components/Atoms/',
                 component: ComponentCreator('/nucleus/docs/Components/Atoms/', 'cc7'),
@@ -68,14 +62,8 @@ export default [
                 sidebar: "defaultSidebar"
               },
               {
-                path: '/nucleus/docs/Components/Molecules/',
-                component: ComponentCreator('/nucleus/docs/Components/Molecules/', '8f2'),
-                exact: true,
-                sidebar: "defaultSidebar"
-              },
-              {
-                path: '/nucleus/docs/Components/Organisms/',
-                component: ComponentCreator('/nucleus/docs/Components/Organisms/', 'd5a'),
+                path: '/nucleus/docs/Components/Atoms/Textfield',
+                component: ComponentCreator('/nucleus/docs/Components/Atoms/Textfield', 'dc9'),
                 exact: true,
                 sidebar: "defaultSidebar"
               },

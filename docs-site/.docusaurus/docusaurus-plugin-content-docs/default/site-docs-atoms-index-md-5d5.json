@@ -1,7 +1,7 @@
 {
   "id": "Atoms/index",
   "title": "Atoms",
-  "description": "Atoms are the smallest building blocks in the design system. They represent fundamental UI elements that cannot be broken down further without losing their meaning or functionality.",
+  "description": "Atoms are the foundational building blocks of the design system. They represent the simplest UI elements, such as buttons, inputs, labels, and icons. Atoms are highly reusable and serve as the basis for more complex components.",
   "source": "@site/docs/Atoms/index.md",
   "sourceDirName": "Atoms",
   "slug": "/Atoms/",

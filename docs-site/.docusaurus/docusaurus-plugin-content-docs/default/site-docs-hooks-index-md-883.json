@@ -13,8 +13,8 @@
   "frontMatter": {},
   "sidebar": "defaultSidebar",
   "previous": {
-    "title": "Organisms",
-    "permalink": "/nucleus/docs/Components/Organisms/"
+    "title": "Textfield",
+    "permalink": "/nucleus/docs/Components/Atoms/Textfield"
   },
   "next": {
     "title": "useLocalStorage",
