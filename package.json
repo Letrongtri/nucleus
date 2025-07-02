@@ -3,6 +3,15 @@
   "version": "0.2.1",
   "description": "Nucleus — A core library of reusable React components and custom hooks that form the foundation of your projects. Lightweight, modular, and developer-friendly, Nucleus helps you build clean, scalable React apps faster by providing essential building blocks out of the box.",
   "main": "src",
+"keywords": [
+    "react",
+    "components",
+    "hooks",
+    "ui",
+    "library",
+    "typescript",
+    "javascript"
+  ],
   "scripts": {
     "build": "rm -rf dist && tsc && npm run copy-css",
     "copy-css": "cpx \"src/**/*.module.css\" dist",
