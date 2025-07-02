@@ -3,7 +3,7 @@ name: Build and Publish Docusaurus Docs
 on:
   push:
     branches:
-      - pages-publish
+      - main
 permissions:
   contents: write 
   

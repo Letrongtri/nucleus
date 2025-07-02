@@ -8,16 +8,21 @@
           "label": "Next",
           "isLast": true,
           "path": "/nucleus/docs",
-          "mainDocId": "Atoms/index",
+          "mainDocId": "Components/Atoms/index",
           "docs": [
             {
-              "id": "Atoms/Button",
-              "path": "/nucleus/docs/Atoms/Button",
+              "id": "Components/Atoms/Button",
+              "path": "/nucleus/docs/Components/Atoms/Button",
               "sidebar": "defaultSidebar"
             },
             {
-              "id": "Atoms/index",
-              "path": "/nucleus/docs/Atoms/",
+              "id": "Components/Atoms/index",
+              "path": "/nucleus/docs/Components/Atoms/",
+              "sidebar": "defaultSidebar"
+            },
+            {
+              "id": "Components/Atoms/Textfield",
+              "path": "/nucleus/docs/Components/Atoms/Textfield",
               "sidebar": "defaultSidebar"
             },
             {
@@ -40,8 +45,8 @@
           "sidebars": {
             "defaultSidebar": {
               "link": {
-                "path": "/nucleus/docs/Atoms/",
-                "label": "index"
+                "path": "/nucleus/docs/Components/Atoms/",
+                "label": "Atoms"
               }
             }
           }

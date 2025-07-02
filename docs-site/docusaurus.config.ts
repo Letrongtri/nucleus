@@ -77,7 +77,7 @@ const config: Config = {
         },
         {
           type: 'doc',
-          docId: 'Atoms/index',
+          docId: 'Components/Atoms/index',
           position: 'left',
           label: 'Atoms',
         }
