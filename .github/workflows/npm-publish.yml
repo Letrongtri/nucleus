@@ -3,7 +3,7 @@ name: Build and Publish to npm
 on:
   push:
     branches:
-      - npm-publish-setup
+      - main
   workflow_dispatch:
 
 jobs:
