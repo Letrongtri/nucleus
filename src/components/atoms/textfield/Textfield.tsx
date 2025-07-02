@@ -10,6 +10,7 @@ const Textfield: React.FC<TextfieldProps> = ({
   return (
     <input
       type={type}
+      disabled={disabled}
       value={value}
       onChange={onChange}
       className={`${styles.textfield} ${disabled && styles.disabled}`}
