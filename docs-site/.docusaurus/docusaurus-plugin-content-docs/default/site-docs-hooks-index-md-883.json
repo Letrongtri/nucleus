@@ -13,8 +13,8 @@
   "frontMatter": {},
   "sidebar": "defaultSidebar",
   "previous": {
-    "title": "Organisms",
-    "permalink": "/nucleus/docs/Components/Organisms/"
+    "title": "Button",
+    "permalink": "/nucleus/docs/Atoms/Button"
   },
   "next": {
     "title": "useLocalStorage",

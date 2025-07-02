@@ -13,11 +13,11 @@
   "frontMatter": {},
   "sidebar": "defaultSidebar",
   "previous": {
-    "title": "Atoms",
+    "title": "index",
     "permalink": "/nucleus/docs/Atoms/"
   },
   "next": {
-    "title": "Atoms",
-    "permalink": "/nucleus/docs/Components/Atoms/"
+    "title": "Hooks",
+    "permalink": "/nucleus/docs/Hooks/"
   }
 }

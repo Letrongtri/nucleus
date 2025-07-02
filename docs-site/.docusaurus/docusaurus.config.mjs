@@ -75,7 +75,7 @@ export default {
         },
         {
           "type": "doc",
-          "docId": "Components/index",
+          "docId": "Atoms/index",
           "position": "left",
           "label": "Atoms"
         }
