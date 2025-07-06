@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - docsify
+      
 permissions:
   contents:write  
 jobs:
