@@ -1,7 +1,7 @@
 name: Build and Publish Docusaurus Docs
 
 on:
-  push:
+  pull_request:
     branches:
       - docsify
 permissions:
