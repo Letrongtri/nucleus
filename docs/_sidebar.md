@@ -16,3 +16,5 @@
 - [hooks](hooks)
 - regex/
   - [email](regex/email)
+- [GitHub Repository](https://github.com/dosullivan557/nucleus)
+- [Contributing](https://github.com/dosullivan557/nucleus/blob/main/CONTRIBUTING.md)
