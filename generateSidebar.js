@@ -22,6 +22,8 @@ function walk(dir, prefix = '') {
   return output;
 }
 
-const sidebar = walk('docs');
+const sidebar = walk('docs') 
++ '- [GitHub Repository](https://github.com/dosullivan557/nucleus)\n'
++ '- [Contributing](https://github.com/dosullivan557/nucleus/blob/main/CONTRIBUTING.md)\n'
 writeFileSync('docs/_sidebar.md', sidebar);
 console.log('✅ _sidebar.md generated');
