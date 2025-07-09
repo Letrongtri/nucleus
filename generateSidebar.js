@@ -1,6 +1,6 @@
 // generateSidebar.js
-import { readdirSync, statSync, writeFileSync } from 'fs';
-import { join } from 'path';
+const { readdirSync, statSync, writeFileSync } = require('fs');
+const { join } = require('path');
 
 function walk(dir, prefix = '') {
   const entries = readdirSync(dir);
