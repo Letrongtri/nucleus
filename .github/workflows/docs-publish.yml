@@ -21,7 +21,10 @@ jobs:
           node-version: 18
 
       - name: Install Docsify CLI
-        run: npm install -g docsify-cli
+        run: npm install -g docsify-cli 
+
+      - name: Generate sidebar
+        run: node generateSidebar.js
 
       - name: Copy Docsify files to deployment folder
         run: |
