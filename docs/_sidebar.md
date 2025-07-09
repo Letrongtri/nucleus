@@ -14,3 +14,5 @@
   - [useTimeout](hooks/useTimeout)
   - [useToggle](hooks/useToggle)
 - [hooks](hooks)
+- regex/
+  - [email](regex/email)
